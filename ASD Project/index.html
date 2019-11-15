@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+	<div class="nav">
+		<ul>
+			<li class="logo"><img src="stadium_logo - Copy.png" style="width: 100px; height: auto; float: left; margin: -5px 20px;">STADIUM TICKET RESERVATION</li>
+			<li><a href="index.html" id="active">HOME</a></li>
+			<li><a href="Fixtures.html">FIXTURES</a></li>
+			<li><a href="#">CONTACT</a></li>
+			<li><a href="AboutUs.html">ABOUT</a></li>
+			<li class="login2" onclick="myFunction(); myFunction4();"><a href="#">REGISTER</a></li>
+			<li class="login2" onclick="myFunction3(); myFunction2();"><a href="#">LOGIN</a></li>
+		</ul>
+	</div>
+	<div class="body">
+		<div class="text" style="font-weight: bolder; font-size: 50px;">BOOK YOUR TICKET FOR ISL 2019</div>
+		<div class="text" style="font-size: 30px; letter-spacing: 10px;">Register to get your ticket now</div>
+	    <div class="bbtn" id="bbtn" onclick="myFunction(); myFunction4();">REGISTER</div>
+		<div class="bbtn" onclick="myFunction3(); myFunction2();">LOGIN</div> 
+	</div>
+	<div class="register" id="register">
+		<h2 style="text-align: center; padding-bottom: 30px; padding-left: 140px; display: inline-block;">REGISTER</h2>
+		<img src="close_button.png" alt="close_button" class="close_button" onclick="myFunction2()">
+		<form method="post">
+			<input type="text" name="name" placeholder="Enter your name">
+			<input type="text" name="name" placeholder="Enter your age">
+			<input type="email" name="email" placeholder="Enter your email">
+			<input type="password" name="name" placeholder="Enter your password">
+			<input type="submit" name="submit" value="SUBMIT">
+	    </form>
+	</div>
+	<div class="login" id="login">
+		<h2 style="text-align: center; padding-bottom: 20px; padding-left: 170px; display: inline-block;">LOGIN</h2>
+		<img src="close_button.png" alt="close_button" class="close_button" onclick="myFunction4()">
+		<form method="post">
+			<input type="email" name="email" placeholder="Enter your email">
+			<input type="password" name="name" placeholder="Enter your password">
+			<input type="checkbox" name="rememberme">Remember Me<br>
+			<input type="submit" name="submit" value="LOG IN">
+		</form>
+	</div>
+</div>
+
+
+<script>
+function myFunction() {
+  var x = document.getElementById("register").style.display = "block";
+  }
+
+function myFunction2() {
+  var x = document.getElementById("register").style.display = "none";
+  }
+
+function myFunction3() {
+  var y = document.getElementById("login").style.display = "block";
+  }
+
+function myFunction4() {
+  var y = document.getElementById("login").style.display = "none";
+  } 
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="stylesheet" href="style.css">
+	<meta charset="UTF-8">
+	<title>About Us</title>
+</head>
+<body style="background-color: #172e4f; width: 100%; overflow-x: hidden;">
+	<div class="nav">
+		<ul>
+			<li class="logo"><img src="stadium_logo - Copy.png" style="width: 100px; height: auto; float: left; margin: -5px 20px;">STADIUM TICKET RESERVATION</li>
+			<li><a href="index.html">HOME</a></li>
+			<li><a href="Fixtures.html">FIXTURES</a></li>
+			<li><a href="#">CONTACT</a></li>
+			<li><a href="AboutUs.html" id="active">ABOUT</a></li>
+			<li class="login2" onclick="myFunction(); myFunction4();"><a href="#">REGISTER</a></li>
+			<li class="login2" onclick="myFunction3(); myFunction2();"><a href="#">LOGIN</a></li>
+		</ul>
+	</div>
+	<div class="register" id="register">
+		<h2 style="text-align: center; padding-bottom: 30px; padding-left: 140px; display: inline-block;">REGISTER</h2>
+		<img src="close_button.png" alt="close_button" class="close_button" onclick="myFunction2()">
+		<form method="post">
+			<input type="text" name="name" placeholder="Enter your name">
+			<input type="text" name="name" placeholder="Enter your age">
+			<input type="email" name="email" placeholder="Enter your email">
+			<input type="password" name="name" placeholder="Enter your password">
+			<input type="submit" name="submit" value="SUBMIT">
+	    </form>
+	</div>
+	<div class="login" id="login">
+		<h2 style="text-align: center; padding-bottom: 20px; padding-left: 170px; display: inline-block;">LOGIN</h2>
+		<img src="close_button.png" alt="close_button" class="close_button" onclick="myFunction4()">
+		<form method="post">
+			<input type="email" name="email" placeholder="Enter your email">
+			<input type="password" name="name" placeholder="Enter your password">
+			<input type="checkbox" name="rememberme">Remember Me<br>
+			<input type="submit" name="submit" value="LOG IN">
+		</form>
+	</div>
+	<div class="about_container">
+		<h1>ABOUT US</h1>
+		<div class="aboutbox abt1">
+			<div class="profpic"></div>
+			<h3>MUHSIN AHAMED FAZAL</h3>
+			<p style="color: #aaa; font-size: 20px; width: 900px; position: relative; left: 80px; margin-top: 60px; line-height: 30px;">S5 CSE GAMMA,</p>
+			<p style="color: #aaa; font-size: 20px; width: 900px; position: relative; left: 80px; line-height: 30px;"> RAJAGIRI SCHOOL OF ENGINEERING AND TECHNOLOGY</p>
+			<p style="color: #555; font-size: 20px; width: 900px; position: relative; left: 80px; margin-top: 30px; line-height: 30px;"> Contributions: HTML and CSS</p>
+			<p style="color: #555; font-size: 20px; width: 900px; position: relative; left: 80px; margin-top: 30px; line-height: 30px;"> Email ID: muhsin0306@gmail.com</p>
+		</div>
+		<div class="aboutbox abt2">
+			<div class="profpic"></div>
+			<h3>PRASIDH PRABUDHAN</h3>
+			<p style="color: #aaa; font-size: 20px; width: 900px; position: relative; left: 80px; margin-top: 60px; line-height: 30px;">S5 CSE GAMMA,</p>
+			<p style="color: #aaa; font-size: 20px; width: 900px; position: relative; left: 80px; line-height: 30px;"> RAJAGIRI SCHOOL OF ENGINEERING AND TECHNOLOGY</p>
+			<p style="color: #555; font-size: 20px; width: 900px; position: relative; left: 80px; margin-top: 30px; line-height: 30px;"> Contributions: JAVASCRIPT</p>
+			<p style="color: #555; font-size: 20px; width: 900px; position: relative; left: 80px; margin-top: 30px; line-height: 30px;"> Email ID: prasidhprabudhan@gmail.com</p>
+		</div>
+		<div class="aboutbox abt3">
+			<div class="profpic"></div>
+			<h3>PRAVEEN P</h3>
+			<p style="color: #aaa; font-size: 20px; width: 900px; position: relative; left: 80px; margin-top: 60px; line-height: 30px;">S5 CSE GAMMA,</p>
+			<p style="color: #aaa; font-size: 20px; width: 900px; position: relative; left: 80px; line-height: 30px;"> RAJAGIRI SCHOOL OF ENGINEERING AND TECHNOLOGY</p>
+			<p style="color: #555; font-size: 20px; width: 900px; position: relative; left: 80px; margin-top: 30px; line-height: 30px;"> Contributions: PHP</p>
+			<p style="color: #555; font-size: 20px; width: 900px; position: relative; left: 80px; margin-top: 30px; line-height: 30px;"> Email ID: praveenp@gmail.com</p>
+		</div>
+	</div>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("register").style.display = "block";
+  }
+
+function myFunction2() {
+  var x = document.getElementById("register").style.display = "none";
+  }
+
+function myFunction3() {
+  var y = document.getElementById("login").style.display = "block";
+  }
+
+function myFunction4() {
+  var y = document.getElementById("login").style.display = "none";
+  } 
+</script>
+
+</body>
+</html>
+
+<!-- 172e4f -->

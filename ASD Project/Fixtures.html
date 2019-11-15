@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="stylesheet" href="style.css">
+	<meta charset="UTF-8">
+	<title>Fixtures</title>
+</head>
+<body style="background-color: #172e4f; width: 100%; overflow-x: hidden;">
+	<div class="nav">
+		<ul>
+			<li class="logo"><img src="stadium_logo - Copy.png" style="width: 100px; height: auto; float: left; margin: -5px 20px;">STADIUM TICKET RESERVATION</li>
+			<li><a href="index.html">HOME</a></li>
+			<li><a href="Fixtures.html" id="active">FIXTURES</a></li>
+			<li><a href="#">CONTACT</a></li>
+			<li><a href="AboutUs.html">ABOUT</a></li>
+			<li class="login2" onclick="myFunction(); myFunction4();"><a href="#">REGISTER</a></li>
+			<li class="login2" onclick="myFunction3(); myFunction2();"><a href="#">LOGIN</a></li>
+		</ul>
+	</div>
+	<div class="register" id="register">
+		<h2 style="text-align: center; padding-bottom: 30px; padding-left: 140px; display: inline-block;">REGISTER</h2>
+		<img src="close_button.png" alt="close_button" class="close_button" onclick="myFunction2()">
+		<form method="post">
+			<input type="text" name="name" placeholder="Enter your name">
+			<input type="text" name="name" placeholder="Enter your age">
+			<input type="email" name="email" placeholder="Enter your email">
+			<input type="password" name="name" placeholder="Enter your password">
+			<input type="submit" name="submit" value="SUBMIT">
+	    </form>
+	</div>
+	<div class="login" id="login">
+		<h2 style="text-align: center; padding-bottom: 20px; padding-left: 170px; display: inline-block;">LOGIN</h2>
+		<img src="close_button.png" alt="close_button" class="close_button" onclick="myFunction4()">
+		<form method="post">
+			<input type="email" name="email" placeholder="Enter your email">
+			<input type="password" name="name" placeholder="Enter your password">
+			<input type="checkbox" name="rememberme">Remember Me<br>
+			<input type="submit" name="submit" value="LOG IN">
+		</form>
+	</div>
+	<div class="fix_container">
+		<h1>FIXTURES</h1>
+
+		<div class="fixbox">
+			<h5>Matchday 1</h5>
+			<div class="bbtn3">BOOK A SEAT</div>
+			<p style="font-size: 25px; padding-top: 20px; padding-left: 50px; letter-spacing: 7px;">10/09/19 - MONDAY</p>
+			<p style="font-size: 25px; padding-top: 5px; padding-left: 50px;">Jawaharlal Nehru Stadium, Kochi</p>
+			<div class="team1" style="background-image: url(teams/blasters.png);"></div>
+			<div class="hyphen"></div>
+			<div class="team2" style="background-image: url(teams/mumbai.png);"></div>
+			<p class="teamname" style="padding-left: 100px; display: inline-block; font-weight: bold;">Kerala Blasters FC</p>
+			<p class="teamname" style="padding-left: 150px; display: inline-block; font-weight: bold;">Mumbai City FC</p>
+		</div> 
+
+		<div class="fixbox">
+			<h5>Matchday 2</h5>
+			<div class="bbtn3">BOOK A SEAT</div>
+			<p style="font-size: 25px; padding-top: 20px; padding-left: 50px; letter-spacing: 7px;">11/09/19 - TUESDAY</p>
+			<p style="font-size: 25px; padding-top: 5px; padding-left: 50px;">Jawaharlal Nehru Stadium, Chennai</p>
+			<div class="team1" style="background-image: url(teams/chennai.png);"></div>
+			<div class="hyphen"></div>
+			<div class="team2" style="background-image: url(teams/goa.png);"></div>
+			<p class="teamname" style="padding-left: 150px; display: inline-block; font-weight: bold;">Chennayin FC</p>
+			<p class="teamname" style="padding-left: 230px; display: inline-block; font-weight: bold;">FC Goa</p>
+		</div>
+
+		<div class="fixbox">
+			<h5>Matchday 3</h5>
+			<div class="bbtn3">BOOK A SEAT</div>
+			<p style="font-size: 25px; padding-top: 20px; padding-left: 50px; letter-spacing: 7px;">12/11/19 - WEDNESDAY</p>
+			<p style="font-size: 25px; padding-top: 5px; padding-left: 50px;">Salt Lake Stadium, Kolkata</p>
+			<div class="team1" style="background-image: url(teams/athletico.png);"></div>
+			<div class="hyphen"></div>
+			<div class="team2" style="background-image: url(teams/bangalore.png);"></div>
+			<p class="teamname" style="padding-left: 100px; display: inline-block; font-weight: bold;">Atletico de Kolkata</p>
+			<p class="teamname" style="padding-left: 180px; display: inline-block; font-weight: bold;">Bengaluru FC</p>
+		</div>
+
+		<div class="fixbox">
+			<h5>Matchday 4</h5>
+			<div class="bbtn3">BOOK A SEAT</div>
+			<p style="font-size: 25px; padding-top: 20px; padding-left: 50px; letter-spacing: 7px;">13/11/19 - THURSDAY</p>
+			<p style="font-size: 25px; padding-top: 5px; padding-left: 50px;">Indira Gandhi Athletic Stadium, Guwahati</p>
+			<div class="team1" style="background-image: url(teams/northeast.png);"></div>
+			<div class="hyphen"></div>
+			<div class="team2" style="background-image: url(teams/hyderabad.png);"></div>
+			<p class="teamname" style="padding-left: 100px; display: inline-block; font-weight: bold;">North East United FC</p>
+			<p class="teamname" style="padding-left: 140px; display: inline-block; font-weight: bold;">Hyderabad FC</p>
+		</div>
+
+
+		<div class="fixbox">
+			<h5>Matchday 5</h5>
+			<div class="bbtn3">BOOK A SEAT</div>
+			<p style="font-size: 25px; padding-top: 20px; padding-left: 50px; letter-spacing: 7px;">14/11/19 - FRIDAY</p>
+			<p style="font-size: 25px; padding-top: 5px; padding-left: 50px;">Kalinga Stadium, Bhubaneswar</p>
+			<div class="team1" style="background-image: url(teams/odisha.png); background-repeat: no-repeat; background-size: 100%;"></div>
+			<div class="hyphen"></div>
+			<div class="team2" style="background-image: url(teams/jamshedpur.png);"></div>
+			<p class="teamname" style="padding-left: 170px; display: inline-block; font-weight: bold;">Odisha FC</p>
+			<p class="teamname" style="padding-left: 270px; display: inline-block; font-weight: bold;">Jamshedpur FC</p>
+		</div>
+
+
+	</div>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("register").style.display = "block";
+  }
+
+function myFunction2() {
+  var x = document.getElementById("register").style.display = "none";
+  }
+
+function myFunction3() {
+  var y = document.getElementById("login").style.display = "block";
+  }
+
+function myFunction4() {
+  var y = document.getElementById("login").style.display = "none";
+  } 
+</script>
+
+</body>
+</html>

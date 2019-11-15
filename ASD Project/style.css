@@ -1,0 +1,506 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+}
+
+.container {
+	overflow: auto;
+	width: 100%;
+	height: 100vh;
+	background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)) ,url(stadium.jpg);
+	background-size: 100%;
+	animation-name: background;
+	animation-duration: 45s;
+	animation-timing-function: linear;
+	animation-direction: alternate;
+	animation-iteration-count: infinite;
+}
+
+@keyframes background{
+	0% {background-size: 100%;}
+	100%{background-size: 130%;}
+}
+
+.logo {
+	display: inline-block;
+	margin-top: -15px;
+	padding-right: 180px;
+	font-size: 37px;
+	color: white;
+	font-weight: bolder;
+}
+
+.nav ul {
+	width: 100%;
+	display: inline-flex;
+	margin-right: 0px;
+	margin-top: 45px;
+}
+
+.nav ul li {
+	list-style-type: none;
+	margin-right: 30px;
+}
+
+.nav ul li a {
+	text-decoration: none;
+	color: white;
+	font-weight: bold;
+	padding-bottom: 10px;
+}
+
+.nav ul li a:hover {
+	border-bottom: 2px solid white;
+}
+
+#active {
+	border-bottom: 2px solid white;
+	padding: 10px 0px; 
+}	
+
+.login2 {
+	text-align: center;
+	margin-top: -21px;
+	border: 2px solid white;
+	padding-top: 18px;
+	height: 38px;
+	width: 140px;
+	border-radius: 30px;
+
+}
+
+.login2:hover {
+	background-color: white;
+	cursor: pointer;
+}
+
+.login2:hover a{
+	color: black;
+}
+
+.body {
+	margin-top: 200px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 950px;
+	height: 100px;
+}
+
+.text {
+	color: white;
+	text-align: center;
+	padding-bottom: 15px;
+}
+
+.bbtn {
+	margin-top: 30px;
+	font-weight: bold;
+	text-align: center;
+	display: inline-block;
+	text-decoration: none;
+	padding-top: 27px;
+	margin-left: 30px;
+	background-color: white;
+	color: #000;
+	height: 50px;
+	width: 250px;
+	transition: transform .25s;
+}
+
+#bbtn {
+	margin-left: 200px;
+}
+
+.bbtn:hover {
+	cursor: pointer;
+	transform: scale(1.1);
+	box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 1), 0 6px 20px 0 rgba(0, 0, 0, 1);
+	background-color: #000;
+	color: white;
+}
+
+/*EVERYTHING SET TILL NOW
+HOME PAGE DONE*/
+
+.register {
+	z-index: 4;
+	display: none;
+	background-color: white;
+	width: 400px;
+	height: 500px;
+	position: absolute;
+	margin-left: 521px;
+	top: 150px;
+	box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 1), 0 6px 20px 0 rgba(0, 0, 0, 1);
+	padding: 40px 40px 20px 40px;
+	border-radius: 10px;
+}
+
+.register form input[type=text], input[type=email], input[type=password] {
+	border: none;
+	border-radius: 5px;
+	border-bottom: 3px solid #333;
+	margin: 10px 0;
+	padding: 10px 15px;
+	width: 100%;
+	height: 50px;
+	box-sizing: border-box;
+}
+
+.register form input[type=submit] {
+	margin-top: 50px;
+	margin-left: 80px;
+	padding: 20px 80px;
+	background-color: #000;
+	color: white;
+	border: none;
+	height: 70px;
+	font-size: 20px;
+}
+
+.register form input[type=submit]:hover {
+	background-color: blue;
+	box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.9);
+}
+
+.close_button {
+	height: 20px;
+	width: 20px;
+	float: right;
+	margin-top: -10px;
+	margin-right: -10px;
+	transition: .25s;
+}
+
+.close_button:hover {
+	transform: scale(1.3);
+}
+
+/*register div done*/
+
+.login {
+	z-index: 2;
+	display: none; 
+	background-color: white;
+	width: 400px;
+	height: 350px;
+	position: absolute;
+	margin-left: 521px;
+	top: 230px;
+	box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 1), 0 6px 20px 0 rgba(0, 0, 0, 1);
+	padding: 40px 40px 20px 40px;
+	border-radius: 10px;
+}
+
+.login input[type=email], input[type=password] {
+	border: none;
+	border-radius: 5px;
+	border-bottom: 3px solid #333;
+	margin: 10px 0;
+	padding: 10px 15px;
+	width: 100%;
+	height: 50px;
+	box-sizing: border-box;
+}
+
+.login form input[type=checkbox] {
+	height: 20px;
+	width: 20px;
+	vertical-align: middle;
+	margin: 20px 10px;
+	font-size: 10px;
+}
+
+.login form input[type=submit] {
+	margin-top: 10px;
+	margin-left: 90px;
+	padding: 20px 80px;
+	background-color: #000;
+	color: white;
+	border: none;
+	height: 70px;
+	font-size: 20px;
+}
+
+.login form input[type=submit]:hover {
+	background-color: #084;
+	box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.9);
+}
+/* Home page set along with reg and log */
+
+.about_container h1{
+	color: white;
+	letter-spacing: 10px;
+	font-size: 60px;
+	margin-top: 50px;
+	left: 38%;
+	position: relative;
+}
+
+.aboutbox {
+	height: 320px;
+	width: 1100px;
+	margin: auto;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	background-color: white;
+	box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 1), 0 6px 20px 0 rgba(0, 0, 0, 1);
+	box-sizing: border-box;
+	animation-name: about;
+	animation-timing-function: ease-out;
+    animation-duration: .45s;
+}
+
+.abt1 {
+	animation-delay: 0s;
+}
+
+.abt2 {
+	animation-delay: .07s;
+}
+
+.abt3 {
+	animation-delay: .14s;
+}
+
+@keyframes about {
+    from {opacity: 0; transform: scale(0.5) translateY(100px) rotateX(170deg);}
+    to {opacity: 1; transform: scale(1)  translateY(0px) rotateX(0deg); }
+}
+
+
+.profpic {
+	background: url(close_button.jpeg);
+	border-radius: 50%;
+	height: 200px;
+	width: 200px;
+	float: left;
+	position: relative;
+	margin-top: 5%;
+	left: 40px;
+	box-shadow: inset 0 0 20px #555;
+}
+
+.aboutbox h3 {
+	position: relative;
+	letter-spacing: 2px;
+	margin-left: 25.3%;
+	top: 40px;
+	font-size: 30px;
+}
+
+::-webkit-scrollbar { 
+    display: none; 
+}
+
+/* till about set */
+
+.stadium {
+	position: relative;
+	margin: auto;
+	top: 200px;
+	background-size: 100%;
+	background-image: url(footballground2.png);
+	background-repeat: no-repeat;
+	overflow: hidden;
+	z-index: 2;
+	height: 585px;
+	width: 1100px;
+}
+
+.stadium .beginner{
+	height: 35px;
+	width: 40px;
+	background: transparent;
+	float: left;
+	position: relative;
+	margin-left: 4px;
+	margin-top: 4px;
+}
+
+.stadium .insider{
+	height: 35px;
+	width: 40px;
+	background: transparent;
+	float: left;
+	position: relative;
+	margin-left: 4px;
+	margin-top:4px;
+}
+
+.stadium .ender{
+	height: 35px;
+	width: 39.5px;
+	background: transparent;
+	float: left;
+	position: relative;
+	margin-left: 4px;
+	margin-top: 4px;
+}
+
+.stadium .ender2{
+	height: 35px;
+	width: 39.5px;
+	background: transparent;
+	float: left;
+	position: relative;
+	margin-left: 5px;
+	margin-top: 4px;
+}
+
+.stadium .ender3{
+	height: 35px;
+	width: 39.5px;
+	background: transparent;
+	float: left;
+	position: relative;
+	margin-left: 837px;
+	margin-top: 4px;
+}
+
+.stadium .beginner2{
+	height: 35px;
+	width: 40px;
+	background: transparent;
+	float: left;
+	position: relative;
+	margin-left: 4px;
+	margin-top: 3px;
+}
+
+.stadium .insider2{
+	height: 35px;
+	width: 40px;
+	background: transparent;
+	float: left;
+	position: relative;
+	margin-left: 4px;
+	margin-top: 3px;
+}
+
+.stadium .ender4{
+	height: 35px;
+	width: 39.5px;
+	background: transparent;
+	float: left;
+	position: relative;
+	margin-left: 5px;
+	margin-top: 3px;
+}
+
+.stadium .ender5{
+	height: 35px;
+	width: 39.5px;
+	background: transparent;
+	float: left;
+	position: relative;
+	margin-left: 837px;
+	margin-top: 3px;
+	display: ;
+}
+
+/*STADIUM SEAT ALIGNMENT DONE*/
+
+.fix_container {
+	font-size: 60px;
+	margin-top: 50px;
+	margin-left: 15%;
+	position: relative;
+}
+
+.fixbox {
+	height: 500px;
+	width: 900px;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	margin-left: 80px;
+	background-color: white;
+	box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 1), 0 6px 20px 0 rgba(0, 0, 0, 1);
+	box-sizing: border-box;
+	animation-name: about;
+	animation-timing-function: ease-out;
+    animation-duration: .45s;
+}
+
+.fix_container h1{
+	color: white;
+	letter-spacing: 10px;
+	font-size: 60px;
+	margin-top: 50px;
+	left: 27%;
+	position: relative;
+}
+
+.fix_container h5{
+	font-size: 40px;
+	padding-top: 30px;
+	left: 39%;
+	position: relative;
+}
+
+.team1 {
+	margin-left: 150px;
+	margin-right: 40px;
+	margin-top: 40px;
+	height: 200px;
+	width: 200px;
+	display: inline-block;
+}
+
+.team2 {
+	margin-left: 40px;
+	height: 200px;
+	width: 200px;
+	display: inline-block;
+}
+
+.hyphen {
+	background-color: black;
+	height: 20px;
+	width: 80px;
+	margin-bottom: 90px;
+	font-size: 200px;
+	font-weight: bolder;
+	display: inline-block;
+}
+
+.teamname {
+	font-size: 30px;
+}
+
+.booknow {
+	position: absolute; 
+	margin-left: 250px;
+	margin-top: 120px;
+	font-weight: bolder;
+	border-style: 2px solid black;
+}
+
+.bbtn3 {
+	position: absolute;
+	margin-top: 110px;
+	font-weight: bold;
+	text-align: center;
+	padding-top: 27px;
+	margin-left: 230px;
+	background-color: white;
+	color: #000;
+	height: 100px;
+	width: 450px;
+	transition: transform 1s;
+	display: none;
+}
+
+.fixbox:hover .bbtn3{
+	cursor: pointer;
+	transform: scale(1.1);
+	box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 1), 0 6px 20px 0 rgba(0, 0, 0, 1);
+	background-color: rgb(54, 97, 158);
+	color: white;
+	display: inline-block;
+}
+
+.fixbox:hover{
+	background: rgba(1,1,1,0.5);
+}
