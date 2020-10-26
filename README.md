@@ -1,6 +1,7 @@
 Stadium Ticket Booking System
 
 A web application for Online Stadium Ticket Booking System using Xampp server for ISL 2019 focusing on the visual appearance as well.
+Build using HTML, CSS, JavaScript and PHP.
 
 Functionality:
 . Users can register to the system.
