@@ -11,3 +11,6 @@ Functionality:
 . Can watch the highlights of the completed games.
 . Inorder to book a seat, user can click on the available seats and make payment.
 . Partial Credit card validation is done eventhough the payment system implemented isn't real and fully functional.
+
+
+test
